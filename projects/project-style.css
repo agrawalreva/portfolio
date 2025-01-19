@@ -1,41 +1,45 @@
+:root {
+    --color-accent: oklch(65% 50% 0);
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 0 1em;
-    box-sizing: border-box;
+    font: 100%/1.5 system-ui;
+    max-width: 100ch;
+    margin-inline: max(1em, (100% - 100ch) / 2);
+    accent-color: var(--color-accent);
+    font-size: 4rem;
+    text-align: center;
 }
 
 nav {
-    background-color: #333;
-    color: white;
-    padding: 1em;
-}
-
-nav ul {
     display: flex;
-    list-style-type: none;
-    margin: 0;
+    justify-content: space-between;
     padding: 0;
+    margin: 0 0 1em 0;
+    border-bottom: 1px solid oklch(80% 3% 200);
 }
-
+  
+nav ul,
 nav li {
-    margin-right: 1em;
+    display: contents;
 }
-
+  
 nav a {
-    color: white;
-    text-decoration: none;
-}
-
-nav a.current {
-    text-decoration: underline;
-}
-
-h1 {
-    font-size: 4rem;
-    margin: 1em 0;
+    flex: 1;
     text-align: center;
+    padding: 0.5em;
+    text-decoration: none;
+    color: inherit;
+}
+  
+nav a.current {
+    border-bottom: 0.4em solid oklch(80% 3% 200);
+    padding-bottom: calc(0.5em - 0.4em);
+}
+  
+nav a:hover {
+    border-bottom: 0.4em solid var(--color-accent);
+    background-color: oklch(from var(--color-accent) 95% 5% h);
 }
 
 h1, h2, h3, h4, h5, h6 {

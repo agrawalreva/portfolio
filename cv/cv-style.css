@@ -1,47 +1,44 @@
+:root {
+    --color-accent: oklch(65% 50% 0);
+}
+  
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
-nav {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-nav ul li a.current {
-    color: #4caf50;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-h1 {
+    font: 100%/1.5 system-ui;
+    max-width: 100ch;
+    margin-inline: max(1em, (100% - 100ch) / 2);
+    accent-color: var(--color-accent);
     text-align: center;
-    margin-top: 20px;
+}
+  
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 0 1em 0;
+    border-bottom: 1px solid oklch(80% 3% 200);
+}
+  
+nav ul,
+nav li {
+    display: contents;
+}
+  
+nav a {
+    flex: 1;
+    text-align: center;
+    padding: 0.5em;
+    text-decoration: none;
+    color: inherit;
+}
+  
+nav a.current {
+    border-bottom: 0.4em solid oklch(80% 3% 200);
+    padding-bottom: calc(0.5em - 0.4em);
+}
+  
+nav a:hover {
+    border-bottom: 0.4em solid var(--color-accent);
+    background-color: oklch(from var(--color-accent) 95% 5% h);
 }
 
 section {
