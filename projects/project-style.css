@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a.current {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 1em 0;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    text-wrap: balance;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 1em;
+    margin: 2em auto;
+    max-width: 1200px;
+    padding: 1em;
+}
+
+.projects article {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1em;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projects h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.projects img {
+    width: 100%;
+    height: auto;
+    margin: 1em 0;
+    border-radius: 4px;
+}
+
+.projects p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .projects {
+        grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+        gap: 0.5em;
+    }
+}
