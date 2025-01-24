@@ -5,17 +5,17 @@ function $$(selector, context = document) {
 }
 
 let pages = [
-  { url: '/index.html', title: 'Home' },
-  { url: '/projects/index.html', title: 'Projects' },
-  { url: '/contact/index.html', title: 'Contact' },
-  { url: '/cv/index.html', title: 'CV' },
+  { url: '', title: 'Home' },
+  { url: 'projects/', title: 'Projects' },
+  { url: 'contact/', title: 'Contact' },
+  { url: 'cv/', title: 'CV' },
   { url: 'https://github.com/agrawalreva', title: 'GitHub' },
 ];
 
+const ARE_WE_HOME = document.documentElement.classList.contains('home');
+
 let nav = document.createElement('nav');
 document.body.prepend(nav);
-
-const ARE_WE_HOME = document.documentElement.classList.contains('home');
 
 for (let p of pages) {
   let url = p.url;
@@ -27,9 +27,10 @@ for (let p of pages) {
   a.href = url;
   a.textContent = title;
 
-  if (a.host === location.host && a.pathname === location.pathname) {
-    a.classList.add('current');
-  }
+  a.classList.toggle(
+    'current',
+    a.host === location.host && a.pathname === location.pathname
+  );
 
   if (a.host !== location.host) {
     a.target = '_blank';
