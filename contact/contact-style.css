@@ -108,8 +108,8 @@ form > * {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    font-size: 80%; /* Smaller font size */
-    font-family: inherit; /* Inherit the page's font */
+    font-size: 80%;
+    font-family: inherit;
   }
   
   .color-scheme select {

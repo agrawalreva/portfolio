@@ -52,22 +52,35 @@ document.body.insertAdjacentHTML(
 
 const select = document.querySelector('.color-scheme select');
 
-// Function to set the color scheme and save it to localStorage
 function setColorScheme(colorScheme) {
   document.documentElement.style.setProperty('color-scheme', colorScheme);
-  localStorage.colorScheme = colorScheme; // Save preference
+  localStorage.colorScheme = colorScheme;
 }
 
-// Listen for changes to the dropdown menu
 select.addEventListener('input', function (event) {
   setColorScheme(event.target.value);
 });
 
-// Apply saved preference on page load
 if ('colorScheme' in localStorage) {
   const savedScheme = localStorage.colorScheme;
   setColorScheme(savedScheme);
-
-  // Update the dropdown to reflect the saved preference
   select.value = savedScheme;
 }
+
+const form = document.querySelector('form');
+
+form?.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const data = new FormData(form);
+
+  let url = form.action + '?';
+
+  for (let [name, value] of data) {
+    url += `${name}=${encodeURIComponent(value)}&`;
+  }
+
+  url = url.slice(0, -1);
+
+  location.href = url;
+});
