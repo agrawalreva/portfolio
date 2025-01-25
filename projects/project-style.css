@@ -1,20 +1,26 @@
 :root {
     --color-accent: oklch(65% 50% 0);
 }
-
+  
+html {
+    color-scheme: light dark;
+}
+  
 body {
     font: 100%/1.5 system-ui;
     max-width: 100ch;
     margin-inline: max(1em, (100% - 100ch) / 2);
     accent-color: var(--color-accent);
+    background-color: Canvas;
+    color: CanvasText;
 }
-
+  
 nav {
+    --border-color: oklch(50% 10% 200 / 40%);
     display: flex;
     justify-content: space-between;
     padding: 0;
     margin: 0 0 1em 0;
-    border-bottom: 1px solid oklch(80% 3% 200);
 }
   
 nav ul,
@@ -29,18 +35,26 @@ nav a {
     text-decoration: none;
     color: inherit;
 }
-  
+
 nav a.current {
-    border-bottom: 0.4em solid oklch(80% 3% 200);
+    border-bottom: 0.4em solid var(--border-color);
     padding-bottom: calc(0.5em - 0.4em);
 }
   
 nav a:hover {
     border-bottom: 0.4em solid var(--color-accent);
-    background-color: oklch(from var(--color-accent) 95% 5% h);
+    background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+}
+  
+.color-scheme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 80%;
+    font-family: inherit;
 }
 
-h1{
+h1 {
     font-size: 4rem;
     text-align: center;
 }
@@ -63,11 +77,14 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 3;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1em;
-    background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projects article:hover {
+    border-color: var(--color-accent);
 }
 
 .projects h2 {
