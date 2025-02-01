@@ -1,74 +1,68 @@
 [
     {
       "title": "Portfolio Website",
-      "year": "2024",
-      "image": "https://example.com/portfolio.png",
+      "year": "2025",
+      "image": "../images/portfolio.jpeg",
       "description": "A personal portfolio showcasing my projects and skills."
     },
     {
-      "title": "Weather App",
-      "year": "2023",
-      "image": "https://example.com/weather.png",
-      "description": "A weather forecasting app using OpenWeather API."
-    },
-    {
-      "title": "Task Manager",
-      "year": "2022",
-      "image": "https://example.com/task-manager.png",
-      "description": "A task management application with drag-and-drop features."
-    },
-    {
-      "title": "E-commerce Website",
+      "title": "FullStack AI Content generation SAAS Platform",
       "year": "2024",
-      "image": "https://example.com/ecommerce.png",
-      "description": "A full-stack e-commerce platform for online shopping."
+      "image": "../images/aicontent.jpeg",
+      "description": "A website to generate any kind of AI content."
     },
     {
-      "title": "Expense Tracker",
+      "title": "Algorithm Visualizer",
+      "year": "2023",
+      "image": "../images/algo.png",
+      "description": "An algorithm visualizer to help understand how different algorithms work."
+    },
+    {
+        "title": "Blog Platform",
+        "year": "2022",
+        "image": "../images/blog.jpeg",
+        "description": "A blog publishing platform with Markdown support."
+    },
+    {
+      "title": "Calculator App",
       "year": "2021",
-      "image": "https://example.com/expense.png",
-      "description": "A personal finance tracking app with budget management."
+      "image": "../images/calc.jpeg",
+      "description": "A basic calculator app."
     },
     {
-      "title": "Chat Application",
-      "year": "2023",
-      "image": "https://example.com/chat.png",
-      "description": "A real-time chat application using WebSockets."
+        "title": "Chat Application",
+        "year": "2022",
+        "image": "../images/chat.jpeg",
+        "description": "A real-time chat application using WebSockets."
     },
     {
-      "title": "AI Image Generator",
-      "year": "2024",
-      "image": "https://example.com/ai.png",
-      "description": "An AI-based image generator using machine learning."
-    },
-    {
-      "title": "Blog Platform",
-      "year": "2022",
-      "image": "https://example.com/blog.png",
-      "description": "A blog publishing platform with Markdown support."
-    },
-    {
-      "title": "Stock Market Dashboard",
-      "year": "2021",
-      "image": "https://example.com/stock.png",
-      "description": "A real-time stock market dashboard with API integration."
-    },
-    {
-      "title": "Movie Recommendation System",
-      "year": "2023",
-      "image": "https://example.com/movies.png",
-      "description": "A movie recommendation engine based on user preferences."
-    },
-    {
-      "title": "Smart Home Controller",
-      "year": "2022",
-      "image": "https://example.com/smarthome.png",
-      "description": "A smart home automation system using IoT."
-    },
-    {
-      "title": "Online Quiz App",
-      "year": "2024",
-      "image": "https://example.com/quiz.png",
-      "description": "An interactive quiz platform with dynamic scoring."
-    }
+		"title": "Lorem ipsum dolor sit.",
+		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+	},
+	{
+		"title": "Architecto minima sed omnis?",
+		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
+		"description": "Est, reiciendis aspernatur debitis maxime et itaque animi sit quod quo, tempore incidunt tempora dignissimos exercitationem enim numquam quam quaerat optio laborum ut unde hic delectus laboriosam? Quasi, cupiditate corporis."
+	},
+	{
+		"title": "Asperiores rem repellendus doloremque.",
+		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
+		"description": "Eligendi tenetur quae quos recusandae est. Cumque, voluptatem. Quo nihil dignissimos molestiae explicabo praesentium aspernatur debitis, illo rerum possimus quam ducimus earum nulla officiis maiores itaque repellat corporis soluta labore?"
+	},
+	{
+		"title": "Laudantium reprehenderit placeat perspiciatis.",
+		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
+		"description": "Quo minus perferendis nulla corrupti repellat dolorem dolore assumenda sit minima ducimus quidem ullam, id ipsa dicta tempora laborum officiis unde possimus cumque nobis alias inventore! Ullam repudiandae iusto nam."
+	},
+	{
+		"title": "Consequuntur autem eos facere.",
+		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
+		"description": "Laborum alias ea unde harum aspernatur? Molestiae, veritatis, possimus, numquam ex excepturi quod ducimus sit odit optio quibusdam sequi aliquid itaque tempore perspiciatis placeat expedita vero voluptates. Sit, aspernatur sint!"
+	},
+	{
+		"title": "Quos sint quaerat omnis?",
+		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
+		"description": "Est neque, velit nam rerum error odio voluptates voluptatem magnam laboriosam ad? Doloribus, id et itaque unde porro totam ullam quaerat blanditiis odit animi eveniet aut, voluptate velit iure odio."
+	}
 ]
