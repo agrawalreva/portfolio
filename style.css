@@ -56,19 +56,19 @@ nav a:hover {
 
 #profile-stats dl {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
-  gap: 10px; /* Adds spacing between items */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
   text-align: center;
 }
 
 #profile-stats dt {
   font-weight: bold;
-  grid-row: 1; /* All labels go in the first row */
+  grid-row: 1;
 }
 
 #profile-stats dd {
   margin: 0;
   color: #007bff;
   font-size: 1.2em;
-  grid-row: 2; /* All values go in the second row */
+  grid-row: 2;
 }
