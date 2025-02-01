@@ -1,62 +1,74 @@
 [
     {
-      "title": "Project Title",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid beatae blanditiis magnam quibusdam, ab porro ut doloremque, laborum sapiente, enim culpa labore neque ipsam tenetur! Perspiciatis accusamus suscipit atque."
+      "title": "Portfolio Website",
+      "year": "2024",
+      "image": "https://example.com/portfolio.png",
+      "description": "A personal portfolio showcasing my projects and skills."
     },
     {
-      "title": "Project Title",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Quisquam aliquam aliquid a eum ullam nihil illo voluptatem quibusdam beatae architecto eius obcaecati pariatur, id deleniti deserunt molestias at sapiente, vero, blanditiis laboriosam? Earum magni reprehenderit provident accusantium similique!"
+      "title": "Weather App",
+      "year": "2023",
+      "image": "https://example.com/weather.png",
+      "description": "A weather forecasting app using OpenWeather API."
     },
     {
-      "title": "Project Title",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Deleniti earum at, veritatis perspiciatis sequi non eaque quas, aliquid pariatur consectetur laudantium aperiam repellendus obcaecati error eos placeat? Nam aperiam provident nobis quod, error cupiditate doloremque. Dolore, asperiores non?"
+      "title": "Task Manager",
+      "year": "2022",
+      "image": "https://example.com/task-manager.png",
+      "description": "A task management application with drag-and-drop features."
     },
     {
-      "title": "Project Title",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Quod vitae commodi sunt inventore pariatur voluptate accusamus facere esse! Quisquam quis perferendis quibusdam, eos magni numquam officia voluptatum illum, iste aut, nihil at ut maxime ratione deserunt quas voluptatibus!"
+      "title": "E-commerce Website",
+      "year": "2024",
+      "image": "https://example.com/ecommerce.png",
+      "description": "A full-stack e-commerce platform for online shopping."
     },
     {
-      "title": "Project Title",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Ad reiciendis ut vitae optio earum veniam id cumque. Harum dignissimos nulla excepturi sed architecto quis, quibusdam sapiente corrupti molestiae, cum veritatis officiis, impedit non a laborum eius! Animi, temporibus."
+      "title": "Expense Tracker",
+      "year": "2021",
+      "image": "https://example.com/expense.png",
+      "description": "A personal finance tracking app with budget management."
     },
     {
-      "title": "Project Title",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Fuga sint harum voluptas dignissimos cum delectus maiores non eius explicabo iste doloremque corporis, exercitationem voluptatibus quam cupiditate molestias. Rerum nemo voluptatibus aperiam iure reprehenderit aliquam dolore temporibus aspernatur soluta."
+      "title": "Chat Application",
+      "year": "2023",
+      "image": "https://example.com/chat.png",
+      "description": "A real-time chat application using WebSockets."
     },
     {
-      "title": "Project Title",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Recusandae temporibus reprehenderit et eaque repellat quae nesciunt ut. Ex fuga nam error et debitis eius voluptatem, nihil quo similique provident nemo aut at assumenda consequuntur consectetur nulla molestias hic?"
+      "title": "AI Image Generator",
+      "year": "2024",
+      "image": "https://example.com/ai.png",
+      "description": "An AI-based image generator using machine learning."
     },
     {
-      "title": "Project Title",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Beatae iste alias laborum et optio doloremque cumque id omnis nam! Corrupti aut incidunt natus voluptates architecto sed reiciendis laboriosam eveniet cum, inventore consequatur nulla accusantium reprehenderit unde praesentium molestiae!"
+      "title": "Blog Platform",
+      "year": "2022",
+      "image": "https://example.com/blog.png",
+      "description": "A blog publishing platform with Markdown support."
     },
     {
-      "title": "Project Title",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Est error nobis inventore ex quia nihil, veniam asperiores molestias saepe labore aliquid hic! Maxime assumenda quis minus veritatis illum consequatur eligendi repellendus vel ipsam, id quo maiores incidunt totam!"
+      "title": "Stock Market Dashboard",
+      "year": "2021",
+      "image": "https://example.com/stock.png",
+      "description": "A real-time stock market dashboard with API integration."
     },
     {
-      "title": "Project Title",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Asperiores inventore possimus a doloribus necessitatibus ratione, temporibus corporis beatae totam error, facilis quidem fugit ullam hic officia praesentium impedit, facere dolorem velit? Incidunt sint amet possimus! Quam, perspiciatis ipsa!"
+      "title": "Movie Recommendation System",
+      "year": "2023",
+      "image": "https://example.com/movies.png",
+      "description": "A movie recommendation engine based on user preferences."
     },
     {
-      "title": "Project Title",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Autem animi explicabo impedit aspernatur fugit laboriosam eos dignissimos. Dignissimos nobis, distinctio repudiandae deleniti possimus quod harum aut adipisci, nisi iusto facilis sit vitae eligendi asperiores eius laborum error pariatur?"
+      "title": "Smart Home Controller",
+      "year": "2022",
+      "image": "https://example.com/smarthome.png",
+      "description": "A smart home automation system using IoT."
     },
     {
-      "title": "Project Title",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "In sed laboriosam non soluta aliquam nihil perferendis vero modi maxime, quaerat ad, voluptates reprehenderit tenetur ratione voluptate quod aliquid minima recusandae reiciendis quas nemo vitae necessitatibus quia repudiandae! Tempore."
+      "title": "Online Quiz App",
+      "year": "2024",
+      "image": "https://example.com/quiz.png",
+      "description": "An interactive quiz platform with dynamic scoring."
     }
 ]

@@ -53,3 +53,18 @@ nav a:hover {
   font-size: 80%;
   font-family: inherit;
 }
+
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#profile-stats dt {
+  font-weight: bold;
+}
+
+#profile-stats dd {
+  margin: 0;
+  color: #007bff;
+}
