@@ -75,16 +75,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .projects article {
     display: grid;
-    grid-template-rows: subgrid;
-    grid-row: span 3;
+    grid-template-rows: auto auto 1fr auto; /* Ensure the year is placed at the bottom */
+    gap: 10px; /* Add some spacing between elements */
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.projects article:hover {
-    border-color: var(--color-accent);
 }
 
 .projects h2 {
@@ -101,6 +97,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .projects p {
     margin: 0;
+}
+
+.project-year {
+    font-family: 'Baskerville', serif;
+    font-variant-numeric: oldstyle-nums;
+    color: gray;
+    font-size: 0.9em;
+    margin-top: 10px; /* Add margin to separate it from the description */
 }
 
 @media (max-width: 768px) {

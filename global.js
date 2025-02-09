@@ -87,20 +87,21 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
       return;
   }
 
-containerElement.innerHTML = '';
+  containerElement.innerHTML = '';
 
-if (projects.length === 0) {
+  if (projects.length === 0) {
       containerElement.innerHTML = '<p>No projects available.</p>';
       return;
-}
+  }
 
-projects.forEach(project => {
+  projects.forEach(project => {
       const article = document.createElement('article');
 
       article.innerHTML = `
           <${headingLevel}>${project.title}</${headingLevel}>
           <img src="${project.image}" alt="${project.title}">
           <p>${project.description}</p>
+          ${project.year ? `<div class="project-year">c. ${project.year}</div>` : ''}
       `;
 
       containerElement.appendChild(article);
