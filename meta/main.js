@@ -17,7 +17,7 @@ const usableArea = {
 let brushSelection = null;
 
 async function loadData() {
-  data = await d3.csv('loc.csv', (row) => ({
+  data = await d3.csv('/portfolio/meta/loc.csv', (row) => ({
     ...row,
     line: Number(row.line),
     depth: Number(row.depth),
