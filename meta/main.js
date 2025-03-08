@@ -1,5 +1,6 @@
 let data = [];
 let commits = [];
+let selectedCommits = [];
 let xScale, yScale, rScale;
 
 const width = 1000;
@@ -17,7 +18,7 @@ const usableArea = {
 let brushSelection = null;
 
 async function loadData() {
-  data = await d3.csv('/portfolio/meta/loc.csv', (row) => ({
+  data = await d3.csv('loc.csv', (row) => ({
     ...row,
     line: Number(row.line),
     depth: Number(row.depth),
@@ -166,16 +167,23 @@ function createScatterplot() {
       .attr('fill', 'steelblue')
       .style('fill-opacity', 0.7)
       .on('mouseenter', (event, commit) => {
-        d3.select(event.currentTarget).style('fill-opacity', 1);
+        d3.select(event.currentTarget)
+          .classed('selected', selectedCommits.includes(commit)) // Apply selection styling
+          .style('fill-opacity', 1);
+      
         updateTooltipContent(commit);
         updateTooltipVisibility(true);
         updateTooltipPosition(event);
       })
-      .on('mouseleave', function () {
-        d3.select(event.currentTarget).style('fill-opacity', 0.7);
+      .on('mouseleave', function (event, commit) {
+        d3.select(event.currentTarget)
+          .classed('selected', selectedCommits.includes(commit)) // Keep styling consistent
+          .style('fill-opacity', 0.7);
+      
         updateTooltipContent({});
         updateTooltipVisibility(false);
       });
+      
   
     svg.append('g')
       .attr('transform', `translate(0, ${usableArea.bottom})`)
@@ -187,57 +195,74 @@ function createScatterplot() {
 }
 
 function brushSelector() {
-    const svg = d3.select('svg');
-    const brush = d3.brush().on('start brush end', brushed);
-    
-    svg.append('g').attr('class', 'brush').call(brush);
-    d3.select(svg.node()).selectAll('.dots, .overlay ~ *').raise();
-  }
+  const svg = d3.select('#chart svg');
+  const brush = d3.brush()
+    .extent([
+      [usableArea.left, usableArea.top],
+      [usableArea.right, usableArea.bottom]
+    ])
+    .on('start brush end', brushed);
+
+  svg.append('g')
+    .attr('class', 'brush')
+    .call(brush);
+}
   
-  function brushed(event) {
-    brushSelection = event.selection;
+  function brushed(evt) {
+    let selection = evt.selection;
+  
+    selectedCommits = !selection
+      ? []
+      : commits.filter((commit) => {
+          let min = { x: selection[0][0], y: selection[0][1] };
+          let max = { x: selection[1][0], y: selection[1][1] };
+          let x = xScale(commit.datetime);
+          let y = yScale(commit.hourFrac);
+  
+          return x >= min.x && x <= max.x && y >= min.y && y <= max.y;
+        });
+  
     updateSelection();
   }
   
-  function isCommitSelected(commit) {
-    if (!brushSelection) return false;
-    
-    const [[x0, y0], [x1, y1]] = brushSelection;
-    const x = xScale(commit.datetime);
-    const y = yScale(commit.hourFrac);
   
-    return x >= x0 && x <= x1 && y >= y0 && y <= y1;
-  }
+  function isCommitSelected(commit) {
+    return selectedCommits.includes(commit);
+  }  
   
   function updateSelection() {
-    d3.selectAll('circle').classed('selected', (d) => isCommitSelected(d));
+    d3.selectAll('circle')
+      .classed('selected', (d) => isCommitSelected(d));
+      
     updateSelectionCount();
     updateLanguageBreakdown();
   }
   
+  
   function updateSelectionCount() {
-    const selectedCommits = brushSelection ? commits.filter(isCommitSelected) : [];
     const countElement = document.getElementById('selection-count');
     countElement.textContent = `${selectedCommits.length || 'No'} commits selected`;
   }
   
   function updateLanguageBreakdown() {
-    const selectedCommits = brushSelection ? commits.filter(isCommitSelected) : [];
     const container = document.getElementById('language-breakdown');
+    container.innerHTML = '';
+  
     if (selectedCommits.length === 0) {
-      container.innerHTML = '';
+      container.innerHTML = '<dd>No commits selected</dd>';
       return;
     }
-    const requiredCommits = selectedCommits.length ? selectedCommits : commits;
-    const lines = requiredCommits.flatMap((d) => d.lines);
+  
+    const lines = selectedCommits.flatMap((d) => d.lines);
     const breakdown = d3.rollup(lines, (v) => v.length, (d) => d.type);
-    container.innerHTML = '';
-    for (const [language, count] of breakdown) {
+  
+    breakdown.forEach((count, language) => {
       const proportion = count / lines.length;
       const formatted = d3.format('.1~%')(proportion);
       container.innerHTML += `<dt>${language}</dt><dd>${count} lines (${formatted})</dd>`;
-    }
+    });
   }
+  
   
 
 document.addEventListener('DOMContentLoaded', async () => {
