@@ -7,14 +7,33 @@
     <link rel="stylesheet" href="meta-style.css">
     <script src="../global.js" type="module"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="main.js" type="module"></script>
 </head>
 <body>
     <h1>Meta</h1>
     <p>This page displays various statistics about our codebase, including lines of code, file counts, and other relevant metrics.</p>
+    <div id="time-filter" style="display: flex; align-items: baseline;">
+        <label style="margin-right: 1rem;">
+          Show commits until:
+          <input 
+            id="timeSlider" 
+            type="range" 
+            min="0" 
+            max="100" 
+            value="100"
+          />
+        </label>
+        <time id="selectedTime" style="margin-left: auto;"></time>
+      </div>
+    <dl class="files"></dl>
     <div id="stats"></div>
     <h2>Commits by time of day</h2>
-    <div id="chart"></div>
+    <div id="scrollytelling">
+        <div id="scroll-container">
+          <div id="spacer"></div>
+          <div id="items-container"></div>
+        </div>
+        <div id="chart"></div>
+      </div>
     <dl id="commit-tooltip" class="info tooltip" hidden>
         <dt>Commit</dt>
         <dd><a href="" id="commit-link" target="_blank"></a></dd>
@@ -30,5 +49,16 @@
       <p id="selection-count">No commits selected</p>
       <h3>Language Breakdown</h3>
       <dl id="language-breakdown" class="stats"></dl>
+    <script type="module">
+        import { loadData, updateTimeDisplay } from './main.js';
+        document.addEventListener('DOMContentLoaded', loadData);
+          loadData(); 
+          const slider = document.getElementById('timeSlider');
+          slider.addEventListener('input', () => {
+            updateTimeDisplay();
+        });
+    </script>
+      
+    <script src="main.js" type="module"></script>
 </body>
 </html>
