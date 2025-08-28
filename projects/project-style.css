@@ -54,7 +54,7 @@
 .searchBar:focus {
     outline: none;
     border-color: var(--color-accent);
-    box-shadow: 0 0 0 3px color-mix(in oklch, var(--color-accent), transparent 80%);
+    box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.1);
 }
 
 .clear-button {
@@ -74,7 +74,7 @@
 
 .clear-button:hover {
     color: var(--color-accent);
-    background: color-mix(in oklch, var(--color-accent), transparent 90%);
+    background: rgba(212, 165, 116, 0.1);
 }
 
 /* Enhanced Pie Chart */
@@ -128,7 +128,7 @@
 }
 
 .legend-item:hover {
-    background: color-mix(in oklch, var(--color-accent), transparent 90%);
+    background: rgba(212, 165, 116, 0.1);
 }
 
 .legend-item.selected {
@@ -215,7 +215,7 @@
 }
 
 .project-tech span {
-    background: color-mix(in oklch, var(--color-accent), transparent 90%);
+    background: rgba(212, 165, 116, 0.1);
     color: var(--color-accent);
     padding: 0.25rem 0.75rem;
     border-radius: 1rem;

@@ -71,7 +71,7 @@
 
 .case-study-tag {
     display: inline-block;
-    background: color-mix(in oklch, var(--color-accent), transparent 90%);
+    background: rgba(212, 165, 116, 0.1);
     color: var(--color-accent);
     padding: 0.25rem 0.75rem;
     border-radius: 1rem;
@@ -89,7 +89,7 @@
 .key-metrics {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     margin-bottom: 1.5rem;
 }
 
@@ -167,7 +167,7 @@
 }
 
 .close-btn:hover {
-    background: color-mix(in oklch, var(--color-accent), transparent 90%);
+    background: rgba(212, 165, 116, 0.1);
     color: var(--color-accent);
 }
 
@@ -278,10 +278,6 @@
         margin: 0 1rem 2rem 1rem;
     }
     
-    .cycle-timeline {
-        grid-template-columns: 1fr;
-    }
-    
     .results-grid {
         grid-template-columns: 1fr;
     }
@@ -321,12 +317,12 @@
         box-shadow: none;
         border: 1px solid #ccc;
     }
-    
+
     .expand-btn,
     .close-btn {
         display: none;
     }
-    
+
     .case-study-detail.hidden {
         display: block;
     }
