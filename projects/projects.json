@@ -1,74 +1,82 @@
 [
     {
-      "title": "Portfolio Website",
+      "title": "Machine Learning Portfolio Website",
       "year": "2025",
-      "image": "../images/portfolio.jpeg",
-      "description": "A personal portfolio showcasing my projects and skills."
+      "image": "../src/images/portfolio.jpeg",
+      "description": "A modern portfolio website showcasing data science projects with interactive visualizations and responsive design.",
+      "technologies": ["JavaScript", "D3.js", "CSS3", "HTML5"],
+      "category": "Web Development"
     },
     {
-      "title": "FullStack AI Content generation SAAS Platform",
+      "title": "AI Content Generation Platform",
       "year": "2024",
-      "image": "../images/aicontent.jpeg",
-      "description": "A website to generate any kind of AI content."
+      "image": "../src/images/aicontent.jpeg",
+      "description": "Full-stack SaaS platform for AI-powered content generation using natural language processing and machine learning models.",
+      "technologies": ["Python", "TensorFlow", "React", "Node.js", "OpenAI API"],
+      "category": "Machine Learning"
     },
     {
-      "title": "Algorithm Visualizer",
+      "title": "Algorithm Visualization Tool",
       "year": "2023",
-      "image": "../images/algo.png",
-      "description": "An algorithm visualizer to help understand how different algorithms work."
+      "image": "../src/images/algo.png",
+      "description": "Interactive algorithm visualizer helping students understand sorting, searching, and graph algorithms through step-by-step animations.",
+      "technologies": ["JavaScript", "D3.js", "Canvas API", "Algorithms"],
+      "category": "Data Visualization"
     },
     {
-      "title": "Blog Platform",
+      "title": "Predictive Analytics Dashboard",
+      "year": "2024",
+      "image": "../src/images/ds3.jpeg",
+      "description": "Real-time predictive analytics dashboard for business intelligence using machine learning models and interactive charts.",
+      "technologies": ["Python", "Scikit-learn", "Plotly", "Flask", "PostgreSQL"],
+      "category": "Data Science"
+    },
+    {
+      "title": "Natural Language Processing Chatbot",
+      "year": "2023",
+      "image": "../src/images/chat.jpeg",
+      "description": "Intelligent chatbot using NLP techniques for customer service automation with sentiment analysis capabilities.",
+      "technologies": ["Python", "NLTK", "TensorFlow", "FastAPI", "Redis"],
+      "category": "Machine Learning"
+    },
+    {
+      "title": "Data Visualization Blog Platform",
       "year": "2022",
-      "image": "../images/blog.jpeg",
-      "description": "A blog publishing platform with Markdown support."
+      "image": "../src/images/blog.jpeg",
+      "description": "Blog platform with advanced data visualization features, interactive charts, and statistical analysis tools.",
+      "technologies": ["JavaScript", "D3.js", "Markdown", "Express.js", "MongoDB"],
+      "category": "Data Visualization"
     },
     {
-      "title": "Calculator App",
+      "title": "Statistical Analysis Calculator",
       "year": "2021",
-      "image": "../images/calc.jpeg",
-      "description": "A basic calculator app."
+      "image": "../src/images/calc.jpeg",
+      "description": "Advanced statistical calculator with hypothesis testing, regression analysis, and probability distributions.",
+      "technologies": ["Python", "NumPy", "SciPy", "Matplotlib", "Tkinter"],
+      "category": "Statistics"
     },
     {
-      "title": "Chat Application",
-      "year": "2022",
-      "image": "../images/chat.jpeg",
-      "description": "A real-time chat application using WebSockets."
-    },
-    {
-      "title": "Lorem ipsum dolor sit.",
+      "title": "Time Series Forecasting Model",
       "year": "2024",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
-	  },
-	  {
-      "title": "Architecto minima sed omnis?",
-      "year": "2021",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Est, reiciendis aspernatur debitis maxime et itaque animi sit quod quo, tempore incidunt tempora dignissimos exercitationem enim numquam quam quaerat optio laborum ut unde hic delectus laboriosam? Quasi, cupiditate corporis."
+      "image": "../src/images/spartificial.png",
+      "description": "Time series forecasting model for financial data using ARIMA, LSTM networks, and ensemble methods.",
+      "technologies": ["Python", "Pandas", "TensorFlow", "Prophet", "Jupyter"],
+      "category": "Machine Learning"
     },
     {
-      "title": "Asperiores rem repellendus doloremque.",
+      "title": "Computer Vision Image Classifier",
       "year": "2023",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Eligendi tenetur quae quos recusandae est. Cumque, voluptatem. Quo nihil dignissimos molestiae explicabo praesentium aspernatur debitis, illo rerum possimus quam ducimus earum nulla officiis maiores itaque repellat corporis soluta labore?"
+      "image": "../src/images/tnt.png",
+      "description": "Deep learning image classification system using convolutional neural networks for object recognition.",
+      "technologies": ["Python", "PyTorch", "OpenCV", "TensorFlow", "CUDA"],
+      "category": "Computer Vision"
     },
     {
-      "title": "Laudantium reprehenderit placeat perspiciatis.",
-      "year": "2024",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Quo minus perferendis nulla corrupti repellat dolorem dolore assumenda sit minima ducimus quidem ullam, id ipsa dicta tempora laborum officiis unde possimus cumque nobis alias inventore! Ullam repudiandae iusto nam."
-    },
-    {
-      "title": "Consequuntur autem eos facere.",
+      "title": "Data Pipeline ETL System",
       "year": "2022",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Laborum alias ea unde harum aspernatur? Molestiae, veritatis, possimus, numquam ex excepturi quod ducimus sit odit optio quibusdam sequi aliquid itaque tempore perspiciatis placeat expedita vero voluptates. Sit, aspernatur sint!"
-    },
-    {
-      "title": "Quos sint quaerat omnis?",
-      "year": "2023",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "Est neque, velit nam rerum error odio voluptates voluptatem magnam laboriosam ad? Doloribus, id et itaque unde porro totam ullam quaerat blanditiis odit animi eveniet aut, voluptate velit iure odio."
-	}
-]
+      "image": "../src/images/hdsi.png",
+      "description": "End-to-end ETL pipeline for processing large-scale datasets with data validation and quality checks.",
+      "technologies": ["Python", "Apache Airflow", "PostgreSQL", "Docker", "AWS"],
+      "category": "Data Engineering"
+    }
+] 

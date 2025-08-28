@@ -3,25 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reva Agrawal: Personal Website and Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="global.js" type="module"></script>
-    <script src="index.js" type="module" defer></script>
+    <title>Reva Agrawal - Data Scientist & ML Engineer</title>
+    <meta name="description" content="Data Science major at UC San Diego specializing in machine learning, statistical analysis, and data visualization">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/global.js" type="module"></script>
+    <script src="src/js/index.js" type="module" defer></script>
 </head>
 <body>
-    <h1>Reva Agrawal</h1>
-    <p>Hi! My name is Reva, I am a third year data science major at UC San Diego and I am learning how to build my own website!</p>
-    <img src="images/ucsd_logo.png" alt= "UC San Diego Seal">
-    <h2>Latest Projects</h2>
-    <div class="projects">
-    </div>
-    <div class="github-stats">
-    </div>
-    <h2>GitHub Profile Stats</h2>
-    <div class="github-stats" id="profile-stats">
-        <p>Followers: <span id="followers"></span></p>
-        <p>Following: <span id="following"></span></p>
-        <p>Repositories: <span id="repos"></span></p>
-    </div>  
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Reva Agrawal</h1>
+            <p class="tagline">Data Scientist & ML Engineer</p>
+            <p class="intro">
+                Third-year Data Science major at UC San Diego with expertise in machine learning, 
+                statistical analysis, and data visualization. Passionate about turning complex data 
+                into actionable insights.
+            </p>
+            <div class="stats-grid">
+                <div class="stat">
+                    <span class="stat-number" id="followers">-</span>
+                    <span class="stat-label">GitHub Followers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="repos">-</span>
+                    <span class="stat-label">Repositories</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <img src="src/images/ucsd_logo.png" alt="UC San Diego Seal" class="ucsd-logo">
+        </div>
+    </main>
+
+    <section class="featured-projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid" id="featured-projects">
+            <!-- Projects will be loaded here -->
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Machine Learning</h3>
+                <ul>
+                    <li>Scikit-learn, TensorFlow, PyTorch</li>
+                    <li>Deep Learning & Neural Networks</li>
+                    <li>Statistical Modeling</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Data Analysis</h3>
+                <ul>
+                    <li>Python, R, SQL</li>
+                    <li>Pandas, NumPy, Matplotlib</li>
+                    <li>Statistical Analysis</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Data Visualization</h3>
+                <ul>
+                    <li>D3.js, Plotly, Tableau</li>
+                    <li>Interactive Dashboards</li>
+                    <li>Storytelling with Data</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Get In Touch</h3>
+                <p>Interested in collaborating on data science projects or opportunities?</p>
+                <a href="mailto:ragrawal@ucsd.edu" class="email-link">ragrawal@ucsd.edu</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/revaagrawal" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com/agrawalreva" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p>San Diego, CA</p>
+                <p>Available for remote opportunities</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Reva Agrawal</p>
+        </div>
+    </footer>
 </body>
-</html>
+</html> 
