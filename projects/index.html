@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Reva Agrawal</title>
+    <meta name="description" content="Data science and machine learning projects by Reva Agrawal">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="project-style.css">
+</head>
+<body>
+    <main>
+        <h1 class="projects-title">Data Science Projects</h1>
+        
+        <div class="container">
+            <div class="chart-section">
+                <h2>Projects by Year</h2>
+                <svg id="projects-pie-plot" viewBox="-50 -50 100 100"></svg>
+                <ul class="legend"></ul>
+            </div>
+        </div>
+        
+        <div class="search-container">
+            <input
+                class="searchBar"
+                type="search"
+                aria-label="Search projects"
+                placeholder="🔍 Search projects by technology, topic, or year..."
+            />
+            <button class="clear-button" aria-label="Clear search">×</button>
+        </div>
+        
+        <section class="projects">
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be loaded here -->
+            </div>
+        </section>
+    </main>
+    
+    <script src="../src/js/global.js" type="module"></script>
+    <script src="projects.js" type="module"></script>
+</body>
+</html> 

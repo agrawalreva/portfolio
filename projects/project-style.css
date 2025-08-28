@@ -1,0 +1,282 @@
+/* Projects Page Specific Styles */
+.projects-title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 2rem;
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border);
+}
+
+.chart-section {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.chart-section h2 {
+    margin: 0 0 1.5rem 0;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.searchBar {
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    background: var(--color-bg);
+    color: var(--color-text);
+    transition: border-color 0.2s ease;
+}
+
+.searchBar:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px color-mix(in oklch, var(--color-accent), transparent 80%);
+}
+
+.clear-button {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--color-text-light);
+    padding: 0.25rem;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.clear-button:hover {
+    color: var(--color-accent);
+    background: color-mix(in oklch, var(--color-accent), transparent 90%);
+}
+
+/* Enhanced Pie Chart */
+#projects-pie-plot {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+#projects-pie-plot path {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    stroke: var(--color-bg);
+    stroke-width: 2;
+}
+
+#projects-pie-plot path:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+#projects-pie-plot path.selected {
+    stroke: var(--color-accent);
+    stroke-width: 3;
+    filter: brightness(1.2);
+}
+
+/* Enhanced Legend */
+.legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 1.5rem;
+    margin: 1rem 0 0 0;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    max-width: 600px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.legend-item:hover {
+    background: color-mix(in oklch, var(--color-accent), transparent 90%);
+}
+
+.legend-item.selected {
+    background: var(--color-accent);
+    color: white;
+    font-weight: 600;
+}
+
+.swatch {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-border);
+    flex-shrink: 0;
+}
+
+/* Enhanced Projects Grid */
+.projects {
+    margin: 3rem 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent);
+}
+
+.project-card h3 {
+    margin: 0 0 1rem 0;
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    margin: 0 0 1rem 0;
+    border: 1px solid var(--color-border);
+}
+
+.project-card p {
+    margin: 0 0 1rem 0;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.project-year {
+    font-family: var(--font-mono);
+    color: var(--color-accent);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.project-tech span {
+    background: color-mix(in oklch, var(--color-accent), transparent 90%);
+    color: var(--color-accent);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    font-family: var(--font-mono);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-title {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .legend {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .search-container {
+        margin: 1rem;
+    }
+}
+
+/* Animation for pie chart slices */
+@keyframes sliceAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#projects-pie-plot path {
+    animation: sliceAppear 0.5s ease-out;
+}
+
+/* Loading state */
+.projects-grid.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.projects-grid.loading::after {
+    content: "Loading projects...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-text-light);
+    font-style: italic;
+} 
